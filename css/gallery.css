@@ -1,0 +1,23 @@
+
+.demos {
+    text-align: left;
+    margin-top: 20px;
+    width: 100%;
+    margin: auto;}
+
+.demo-image {
+    cursor: url("http://tholman.com/intense-images/img/plus_cursor.png") 25 25, auto;
+    display: inline-block;
+    width: 220px;
+    height: 220px;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 16px; }
+.demo-image.first {
+    background-image: url('../imgs/1.jpg'); }
+.demo-image.second {
+    background-position: 50% 10%;
+    background-image: url('../imgs/2.jpg'); }
+

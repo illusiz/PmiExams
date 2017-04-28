@@ -12,6 +12,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/collaps.css" rel="stylesheet">
+    <link href="css/gallery.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -54,7 +55,17 @@
                     <div id="mmm2" class="accordion-body collapse in">
                         <div class="accordion-inner">
                             Текст, картинки, статья википедии ответа :)
-
+                            <section class="demos">
+                                <!-- Using divs for the demo, for formatting... you can use images if you want!  -->
+                                <div class="demo-image first" data-image="imgs/1.jpg" data-title="Beautiful fields" data-caption="With lots of wheaty puffs. Love those puffs."></div>
+                                <div class="demo-image second" data-image="imgs/2.jpg" data-title="Fantastic cliffs" data-caption="Longing for exploration. Explore me!"></div>
+                                <div class="demo-image second" data-image="imgs/2.jpg" data-title="Fantastic cliffs" data-caption="Longing for exploration. Explore me!"></div>
+                                <div class="demo-image second" data-image="imgs/2.jpg" data-title="Fantastic cliffs" data-caption="Longing for exploration. Explore me!"></div>
+                                <div class="demo-image second" data-image="imgs/2.jpg" data-title="Fantastic cliffs" data-caption="Longing for exploration. Explore me!"></div>
+                                <div class="demo-image second" data-image="imgs/2.jpg" data-title="Fantastic cliffs" data-caption="Longing for exploration. Explore me!"></div>
+                                <div class="demo-image second" data-image="imgs/2.jpg" data-title="Fantastic cliffs" data-caption="Longing for exploration. Explore me!"></div>
+                                <div class="demo-image second" data-image="imgs/1.jpg" data-title="Fantastic cliffs" data-caption="Longing for exploration. Explore me!"></div>
+                            </section>
 
                         </div>
                     </div>
@@ -1565,7 +1576,15 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 <script src="js/collaps.js"></script>
+<script src="js/gallery.js"></script>
 
+
+<script>
+    window.onload = function() {
+        var elements = document.querySelectorAll( '.demo-image' );
+        Intense( elements );
+    }
+</script>
 
 </body>
 </html>
