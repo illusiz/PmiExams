@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="62d8a6be-fcc7-4384-bd60-4f652007ca16" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Avag.iml" afterPath="$PROJECT_DIR$/.idea/Avag.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/collaps.css" afterPath="$PROJECT_DIR$/css/collaps.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-    </list>
+    <list default="true" id="62d8a6be-fcc7-4384-bd60-4f652007ca16" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -708,12 +703,12 @@
       <workItem from="1493386499443" duration="1967000" />
       <workItem from="1493410078129" duration="8874000" />
       <workItem from="1493451529579" duration="2358000" />
-      <workItem from="1493489760162" duration="1524000" />
+      <workItem from="1493489760162" duration="1617000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31016000" />
+    <option name="totallyTimeSpent" value="31109000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
