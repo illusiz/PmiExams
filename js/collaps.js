@@ -42,17 +42,21 @@ $(function(){
 });
 
 
-loadObjects = function() {
+loadObjects = function(element) {
     /* LOAD OBJECTS */
-    $("img, embed, iframe").each(function() {
-        var obj = $(this);
 
-        obj.attr("src", obj.data("objsrc")).ready(function() {
-            obj.fadeIn(1000, "linear").prev(".loading").fadeOut(750, "linear", function() {
+    var href =$(element).attr("href");
+    href = href.substring(1);
+
+    var div=document.getElementById(href);
+
+    var iFrame = $(div).find("iframe");
+
+    iFrame.attr("src", iFrame.data("objsrc")).ready(function() {
+        iFrame.fadeIn(1000, "linear").prev(".loading").fadeOut(750, "linear", function() {
                 $(this).remove();
             });
         });
-    });
 }
 
 $(document).ready(function() {
@@ -63,6 +67,22 @@ $(document).ready(function() {
         obj.hide().attr("src", "").before("<span class=\"loading\"></span>");
     });
 });
-    
 
+
+$(".hidden_element").show(function(){
+    // Find the iframes within our newly-visible element
+    $(this).find("iframe").prop("src", function(){
+        // Set their src attribute to the value of data-src
+        return $(this).data("src");
+    });
+});
+
+
+
+$(window).load(function() {
+    // Animate loader off screen
+    $(".loader").fadeOut("slow");
+
+    document.getElementById("mypage").style.display = "block";
+});
 

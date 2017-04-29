@@ -25,10 +25,10 @@
     <![endif]-->
 </head>
 <body>
-
+<div class="loader"></div>
 <div class="container-fluid">
     <div class="col-sm-12">
-        <div class="row">
+        <div class="row" style="display: none" id="mypage">
             <!--mmm-->
             <div class="col-sm-12">
                 <h2>
@@ -36,7 +36,7 @@
                 </h2>
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" aria-expanded="false" href="#mmm1">
+                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" aria-expanded="false" href="#mmm1" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 1. Предел последовательности. Необходимое и достаточное условие Коши для
                             сходимости последовательностей.
                         </a>
@@ -142,7 +142,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm2">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm2" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 2. Предел монотонных последовательностей. Число е.
                         </a>
                     </div>
@@ -240,7 +240,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm3">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm3" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 3. Основные теоремы 0 непрерывных функциях (1 и П теоремы Больцано-Коши, 1и П
                             теоремы Вейерштрасса).
                         </a>
@@ -340,7 +340,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mmm4">
+                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mmm4" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 4. Равномерная непрерывность И теорема Кантора.
                         </a>
                     </div>
@@ -438,7 +438,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm5">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm5" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 5. Равномерная непрерывность И теорема Кантора.
                         </a>
                     </div>
@@ -535,7 +535,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm6">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm6" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 6. Формула Тейлора. Приближенное вычисление элементарных функций при помощи
                             формулы Тейлора.
                         </a>
@@ -633,7 +633,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mmm7">
+                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mmm7" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 7. Равномерная сходимость функциональных последовательностей. Равномерная
                             сходимость и непрерывность.
                         </a>
@@ -732,7 +732,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm8">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm8" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 8. Равномерная сходимость и почленное интегрирование рядов.
                         </a>
                     </div>
@@ -829,7 +829,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm9">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm9" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 9. Определение определенного интеграла, формула Ньютона-Лейбница.
                         </a>
                     </div>
@@ -926,7 +926,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mmm10">
+                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mmm10" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 10. Теоремы о среднем значении определенного интеграла.
                         </a>
                     </div>
@@ -1024,7 +1024,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm11">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm11" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 11. Полный дифференциал функции от многих переменных и его геометрическая
                             интерпретация.
                         </a>
@@ -1122,7 +1122,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm12">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm12" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 12. Двойной интеграл и формула для вычисления двойного интеграла.
                         </a>
                     </div>
@@ -1219,7 +1219,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mmm13">
+                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mmm13" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 13. Экстемумы функции от мшотих перемештых
                         </a>
                     </div>
@@ -1317,7 +1317,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm14">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm14" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 14. Интегральная формула Коши об аналитических функциях.
                         </a>
                     </div>
@@ -1414,7 +1414,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm15">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm15" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 15. Условный экстремум. Метод неопределенных коэффициентов Лагранжа.
                         </a>
                     </div>
@@ -1511,7 +1511,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mmm16">
+                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mmm16" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 16. Решение линейных дифференциальных уравнений 1 порядка.
                         </a>
                     </div>
@@ -1609,7 +1609,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm17">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm17" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 17. Однородные и приводимые к однородным дифференциальные уравнения.
                         </a>
                     </div>
@@ -1706,7 +1706,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm18">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm18" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 18. Уравнение в полных дифференциалах. Интегрируемый множитель.
                         </a>
                     </div>
@@ -1803,7 +1803,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mmm19">
+                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mmm19" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 19. Решение линейных однородных дифференциальных уравнений п-ого порядка с
                             постоянными коэффициентами. Случай простых и кратных корней.
                         </a>
@@ -1902,7 +1902,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm20">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm20" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 20. Задача Коши. Теорема существования и единственности решения задачи Коши для
                             дифференциального уравнения у' =і(х,у).
 
@@ -2001,7 +2001,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm21">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm21" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 21. Решение линейных однородных дифференциальных уравнений и систем п-ого
                             порядка с переменными коэффициентами. Фундаментальная система решений.
                         </a>
@@ -2099,7 +2099,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mmm22">
+                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mmm22" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 22. Решение задачи Коши для уравнения колебания струны. Формула Даламбера.
                         </a>
                     </div>
@@ -2197,7 +2197,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm23">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm23" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 23. Метод Фурье и его применение к решению 1 краевой задачи для уравнения колебания струны.
                         </a>
                     </div>
@@ -2294,7 +2294,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm24">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm24" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 24. Гармонические функции. Основные свойства гармонических функций.
                         </a>
                     </div>
@@ -2391,7 +2391,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mmm25">
+                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mmm25" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 25. Метод простой итерации для решения нелинейных алгебраических уравнений.
                         </a>
                     </div>
@@ -2489,7 +2489,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm26">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm26" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 26. Метод секущих и метод касательных (метод Ньютона) для решения нелинейных алгебраических уравнений и сходимость этих методов.
                         </a>
                     </div>
@@ -2586,7 +2586,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm27">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm27" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 27. Итерационные методы для решения систем линейных алгебраических уравнений (метод Якоби (метод простой итерации), метод Гаусса -Зейделя) и их сходимость.
                         </a>
                     </div>
@@ -2683,7 +2683,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mmm28">
+                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mmm28" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 28. Задача об интерполяции. Интерполяционный многочлен Лагранжа и погрешность аппроксимации.
                         </a>
                     </div>
@@ -2781,7 +2781,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm29">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm29" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 29. Квадратурные формулы. Обобщенные формулы прямоугольников, трапеций, Симпсона и их погрешность аппроксимации.
                         </a>
                     </div>
@@ -2878,7 +2878,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm30">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mmm30" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 30. Численные решения обыкновенных дифференциальных уравнений 1 порядка, методы Эйлера и Рунге Кута.
                         </a>
                     </div>
@@ -2983,7 +2983,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#sp1">
+                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#sp1" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 1. Массивы. Массивы на стеке, динамические массивы. Арифметические действия с
                             указателями. Принципы реализации и сложность операций для массивов с динамически
                             изменяемым размером.(напр. это::уесгог, ]ауаЬізг, С# АпауЬізг). [1, 2, 10, 11]
@@ -3083,7 +3083,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp2">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp2" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 2. Типы памяти в программах. Статическая (геаё-он1у и геаё-шгіге), стек, куча.
                             Управление памятью в стеке. Управление памятью в куче, случай ручного управления:
                             принципы работы, фрагментация, синхронизация. Умные указатели. [1, З, 4]
@@ -3182,7 +3182,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp3">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp3" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 3. Автоматическая сборка мусора, принцип действия (тагК-зшеер алгоритм). [5, 6]
                         </a>
                     </div>
@@ -3281,7 +3281,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#sp4">
+                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#sp4" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 4. Структуры. Построение связанных списков с помощью структур и указателей/ссылок.
                             [1] Проблемы списков: фрагментация, локальность доступа.
                         </a>
@@ -3380,7 +3380,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp5">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp5" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 5. Функции, реализация вызова функций с помощью системного стека. Способы (по
                             значению, по ссылке) и механизмы (стек, регистры) передачи параметров. Стоимость
                             вызова функции, встраивание как механизм оптимизации (ін1іпіпё). [1, 7]
@@ -3479,7 +3479,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp6">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp6" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 6. Рекурсивные функции. Использование рекурсии - факторы быстродействия и
                             использования памяти. Оптимизация хвостовой рекурсии (гаі1са11е1ішіпагіоп). [З, 9]
                         </a>
@@ -3577,7 +3577,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#sp7">
+                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#sp7" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 7. Функции как значения, указатели на функции/делегаты, безымянные функции (лямбда-
                             выражения), свертки (с1озиге).[12, 13]
                         </a>
@@ -3676,7 +3676,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp8">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp8" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 8. Классы как реализация абстрактных типов данных. Принцип инкапсуляции. Члены
                             классов (данные, методы). Обьекты класса, размещение объектов на стеке/в куче.
                             Реализация классов в статически типизированных ОО-языках программирования (С++,
@@ -3776,7 +3776,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp9">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp9" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 9. Наследование и виртуальные вызовы, полиморфизм времени исполненияПринцип
                             подстановки Лисков (Ьізйоузиьзгішгіопргіпсір1е). Реализация наследования и
                             виртуальных вызовов в статически типизированных ОО-языках программирования
@@ -3876,7 +3876,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#sp10">
+                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#sp10" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 10. Интерфейсы и абстрактные классы и способы их выражения в статических ОО-языках (С++, ]ауа, С#). [1, 14]
                         </a>
                     </div>
@@ -3974,7 +3974,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp11">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp11" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 11. Бинарное дерево. Рекурсивные и нерекурсивные алгоритмы обхода бинарных деревьев. Бинарное дерево поиска. Сбалансированность.
                             Самобалансирующиеся деревья (АУЬ, красно-черные). [17]
                         </a>
@@ -4072,7 +4072,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp12">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp12" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 12. Структура данных пирамида (Ьеараагазгшсгше), пирамидальная сортировка (Ьеарзогг).
                             Очередь с приоритетами (ргіогігучиеие), реализация с помощью пирамиды и
                             сбалансированных бинарных деревьев поиска. [17]
@@ -4171,7 +4171,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#sp13">
+                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#sp13" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 13. Сортировка массива, теоретический нижний предел сложности. Быстрая сортировка (‹ргісйзогг), сортировка вставкой (іпзеггіопзогг). [17]
                         </a>
                     </div>
@@ -4269,7 +4269,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp14">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp14" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 14. Сортировка массива. Стабильность сортировки. Сортировка вставкой, слиянием
                             (інзепіонзогг, шегёезогг). [17]
                         </a>
@@ -4367,7 +4367,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp15">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp15" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 15. Графы, реализация алгоритмов поиска в ширину и в глубину. Алгоритм Дейкстры. [17]
                         </a>
                     </div>
@@ -4464,7 +4464,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#sp16">
+                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#sp16" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 16. Хэш-таблицы, способы реализации, сложность поиска. [17]
                         </a>
                     </div>
@@ -4562,7 +4562,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp17">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp17" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 17. Праволинейныеграмматики и конечные автоматы. [18]
                         </a>
                     </div>
@@ -4659,7 +4659,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp18">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp18" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 18. КС-грамматики и МП —автоматы. [18]
                         </a>
                     </div>
@@ -4756,7 +4756,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#sp19">
+                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#sp19" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 19. Простые СУ — схемы и МП —преобразователи. [18]
                         </a>
                     </div>
@@ -4854,7 +4854,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp20">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp20" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 20. Этапы компиляции. Синтаксический анализ. [19]
                         </a>
                     </div>
@@ -4951,7 +4951,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp21">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp21" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 21. Компилируемые и интерпретируемые языки. Компиляторы и компоновщики.
                             Виртуальные машины, іизг-ін-гіше компиляция. Бинарный интерфейс приложения
                             (АВТ).[19, 20, 21, 22]
@@ -5050,7 +5050,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#sp22">
+                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#sp22" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 22. Модель данных «сущность-связь»: множества сущностей, атрибуты, связи,
                             моделирование ограничений, подклассы, слабые множества сущностей. [24]
                         </a>
@@ -5149,7 +5149,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp23">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp23" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 23. Реляционная модель данных30сновы реляционной модели, реляционное отображение
                             ЕК-диаграмм и объектных проектов. [24]
                         </a>
@@ -5247,7 +5247,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp24">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp24" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 24. Проектирование реляционных схем: аномалии, декомпозиция схем-отношений,
                             нормальная форма Бойса-Кодда, декомпозиция в ВСЫР, третья нормальная форма. [24]
                         </a>
@@ -5345,7 +5345,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#sp25">
+                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#sp25" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 25. Алгебра реляционных операций: основы реляционной алгебры, операции над
                             мультимножествами, дополнительные операции. Алгебра как язык описания
                             ограничений. [24]
@@ -5445,7 +5445,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp26">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp26" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 26. Требования АСЮ. Транзакции. Уровни изоляции транзакций. [24, 25, 26]
                         </a>
                     </div>
@@ -5542,7 +5542,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp27">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp27" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 27. Параллельные вычисления. Многопроцессорность И многопоточность. Переключение
                             контекста. Приоритеты потоков. Поточно-локальные данные (Шгеаа1оса15гогаёе). [23]
                         </a>
@@ -5640,7 +5640,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#sp28">
+                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#sp28" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 28. Основные проблемы, возникающие при ышогопоточном программировании. Способы
                             синхронизация. Синхронизационные примитивы: мьютексы, семафоры, события. [23]
                         </a>
@@ -5739,7 +5739,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp29">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp29" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 29. . Виртуальная память, цели и реализация. Буфер быстрого преобразования адреса
                             (ТЬВ). юз, 27]
                         </a>
@@ -5837,7 +5837,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp30">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#sp30" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 30. Модель 051. Протоколы и интерфейсы. Стек протоколов. Протокол ТСР/ 1Р.[28]
                         </a>
                     </div>
@@ -5944,7 +5944,7 @@ public class TrioEnumerator : IEnumerator
                 </h5>
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mk1">
+                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mk1" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 1. Определитель п -го порядка и ее свойства. Теорема об определителе произведения матриц
                         </a>
                     </div>
@@ -6042,7 +6042,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk2">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk2" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 2. Описашиге обратимых матриц. Теорема Крамера, правило Крамера.
                         </a>
                     </div>
@@ -6139,7 +6139,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk3">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk3" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 3. Теорема Кронекера — Капелли. Пространство решешипй систем лтхшейшых однородных уравнешигй,
                             его размерность.
                         </a>
@@ -6239,7 +6239,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mk4">
+                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mk4" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 4. Теорема о ранге произведения матриц.
                         </a>
                     </div>
@@ -6337,7 +6337,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk5">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk5" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 5. Огп/гсашиге простых многочленов над полем действительных гшсел.
                         </a>
                     </div>
@@ -6434,7 +6434,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk6">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk6" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 6. Теорема о размерности суммы подпространств.
                         </a>
                     </div>
@@ -6531,7 +6531,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mk7">
+                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mk7" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 7. Теорема о размерности ядра и образа лтхшейшого отображения
                         </a>
                     </div>
@@ -6629,7 +6629,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk8">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk8" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 8. Канонический вид квадратигшой формы. Закон тишерции.
                         </a>
                     </div>
@@ -6726,7 +6726,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk9">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk9" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 9. Алгоритм ортогонализаш/Ш Грамма-Шмидт
                         </a>
                     </div>
@@ -6823,7 +6823,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mk10">
+                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mk10" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 10. Теорема Лагранжа о порядке подгруппы.
                         </a>
                     </div>
@@ -6921,7 +6921,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk11">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk11" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 11. Теорема о ядре гомоморфизма колец (ядро — идеал кольца).
                         </a>
                     </div>
@@ -7018,7 +7018,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk12">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk12" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 12. Вероятностное пространство,формула полной вероятности, теорема Байеса.
                         </a>
                     </div>
@@ -7115,7 +7115,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mk13">
+                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mk13" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 13. Законы больших шасел. Сходимость последовательностей случайшых ВСЛИ‘П/П—Х. Теоремы Чебышева, Хинчина.
                         </a>
                     </div>
@@ -7213,7 +7213,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk14">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk14" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 14. Нормальное распределение и центральная предельная теорема. Теорема Ляпунова.
                             Эмпирическое (выборотшое) распределеШ/ге и выборочные характеристшси и их свойства . Теорема
                             Гливешю.
@@ -7312,7 +7312,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk15">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk15" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 15. Оценка неизвестных параметров. Классифшсация оценок. Методы получеьп/гя точеш+ых оценок
                             метод моментов, метод наибольшего правдоподобия).
                         </a>
@@ -7410,7 +7410,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk116">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk116" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 16. Интервальное оценивашиге. Построеьп/ге доверительных тиштервалов для параметров нормального
                             распределешигя.
                         </a>
@@ -7508,7 +7508,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk117">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk117" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 17. Интервальное оценивашиге. Построеьп/ге доверительных тиштервалов для параметров нормального
                             распределешигя.
                         </a>
@@ -7606,7 +7606,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk118">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk118" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 18. Эффективные оцешси. Неравенство Рао-Крамера. Эффективность оцеш<и параметра нормального распределешигя.
                         </a>
                     </div>
@@ -7703,7 +7703,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk119">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk119" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 19. Проверка статистических гипотез. Критическая область. Критерий согласия Колмогорова и
                             критерий знагшмости Пирсона.
                         </a>
@@ -7806,7 +7806,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mk16">
+                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mk16" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 1. Классическое исшигсление высказываншй (КИБ ); понятие вывода, выводимости; теорема о полноте
                             и непротиворечивости КИВ', разрешимость КИВ.
                         </a>
@@ -7905,7 +7905,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk17">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk17" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 2. Исгшслеьше предшатов первого порядка (Р): определеьп/ге, тиштерпретация, теорема дедукцш/г для Р,
                             полнота Р(без доказательства).
                         </a>
@@ -8003,7 +8003,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk18">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk18" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 3. Формальная арифметика (5): определеьп/ге', построение выводов формул, выражающих основные
                             свойства арифметических операций.
                         </a>
@@ -8101,7 +8101,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mk19">
+                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mk19" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 4. Примитивно рекурсивные, частишю рекурсивные и общерекурсивные фУНКЦРШ. Тезис Чёрча.
                         </a>
                     </div>
@@ -8199,7 +8199,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk20">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk20" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 5. Алфавитное кодироваШ/ге. Неравенство Мак-Миллана. Оптимальное кодироваШ/ге(коды
                             Хаффмена).
                         </a>
@@ -8297,7 +8297,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk21">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk21" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 6. Туршигрньге задагш: определешиге участншсов, занявших первое и последнее; первое и второе;
                             первое, второе и третье места.
                         </a>
@@ -8395,7 +8395,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mk22">
+                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mk22" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 7. Основные классы булевых функцшй: определеШ/гя, свойства; теорема Поста.
                         </a>
                     </div>
@@ -8493,7 +8493,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk23">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk23" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 8. Схемы из функциональных элементов; определешиге функцшиг Шеннона, верхние и нижшиге ее
                             оцеьжи.
                         </a>
@@ -8591,7 +8591,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk24">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk24" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 9. Определение графа, способы задаьп/гя. Маршруты и цшслы в графах, эйлеровы циклы (необходимое
                             и достатогшое условие), гамильтоновы циклы (достатогшое условие).
                         </a>
@@ -8689,7 +8689,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mk25">
+                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mk25" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 10. Деревья, теорема Кэлли. Алгоритм построения минимального остового дерева.
                         </a>
                     </div>
@@ -8787,7 +8787,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk26">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk26" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 11. Плоские графы. Теорема Эйлера. Теорема Понтрягш+а-Куратовского(без доказательства).
                         </a>
                     </div>
@@ -8884,7 +8884,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk27">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk27" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 12. Полиномиальная сводимость комбинаторных задач. Примеры.
                         </a>
                     </div>
@@ -8981,7 +8981,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mk28">
+                        <a class="accordion-toggle"  data-toggle="collapse" data-parent="toggle" href="#mk28" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 13. Задача лтхшейшого программироваьшя и методы ее решения.
                         </a>
                     </div>
@@ -9079,7 +9079,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk29">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk29" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 14. Сети, потоки в сетях, разрезы. Теорема о максимальном потоке и мтишимальном разрезе.
                         </a>
                     </div>
@@ -9176,7 +9176,7 @@ public class TrioEnumerator : IEnumerator
 
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk30">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="toggle" href="#mk30" onClick="loadObjects(this)">
                             <i class="fa fa-plus"></i> 15. Классифшсация игр. Матриш+ые игры. Смешаьшые стратегии. Теорема о минмаксе.
                         </a>
                     </div>
@@ -9295,6 +9295,7 @@ public class TrioEnumerator : IEnumerator
         var elements = document.querySelectorAll( '.demo-image' );
         Intense( elements );
     }
+
 </script>
 
 </body>
