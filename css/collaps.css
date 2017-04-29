@@ -5,8 +5,25 @@
 
 }
 
+
+.accordion-toggle .maths{
+    background:rgb(248, 251, 252);
+
+}
+
+.accordion-toggle .cyber{
+    background:rgb(248, 251, 252);
+
+}
+
+.accordion-toggle .logics{
+    background:rgb(248, 251, 252);
+
+}
+
 .accordion-toggle:hover{
     text-decoration: none;
+    background: rgb(249,220,92);
 
 }
 
