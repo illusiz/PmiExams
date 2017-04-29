@@ -15,8 +15,6 @@ jQuery('.accordion-toggle').click(function(){
     }
 })
 
-
-
 $(function(){
     $('.btn-circle').on('click',function(){
         $('.btn-circle.btn-info').removeClass('btn-info').addClass('btn-default');
@@ -42,3 +40,29 @@ $(function(){
         }
     });
 });
+
+
+loadObjects = function() {
+    /* LOAD OBJECTS */
+    $("img, embed, iframe").each(function() {
+        var obj = $(this);
+
+        obj.attr("src", obj.data("objsrc")).ready(function() {
+            obj.fadeIn(1000, "linear").prev(".loading").fadeOut(750, "linear", function() {
+                $(this).remove();
+            });
+        });
+    });
+}
+
+$(document).ready(function() {
+    /* *** PREVENT OBJECTS FROM LOADING *** */
+    $("img, embed, iframe").each(function() {
+        var obj = $(this);
+        obj.data("objsrc", obj.attr("src"));
+        obj.hide().attr("src", "").before("<span class=\"loading\"></span>");
+    });
+});
+    
+
+
